@@ -1,0 +1,32 @@
+buildscript {
+    ext {
+        hilt_version = '2.40.1'
+        hiltGp_dep = "com.google.dagger:hilt-android-gradle-plugin:$hilt_version"
+
+        compose_ui_version = '1.3.0-beta01'
+    }
+
+    dependencies {
+        classpath hiltGp_dep
+    }
+}// Top-level build file where you can add configuration options common to all sub-projects/modules.
+plugins {
+    id 'com.android.application' version '8.0.0-alpha02' apply false
+    id 'com.android.library' version '8.0.0-alpha02' apply false
+    id 'org.jetbrains.kotlin.android' version '1.6.21' apply false
+}
+
+ext {
+    gson_dep = 'com.google.code.gson:gson:2.8.6'
+
+    coroutines_version = '1.5.2'
+    coroutinesCore_dep = "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines_version"
+    coroutinesAndroid_dep = "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines_version"
+
+    hilt_dep = "com.google.dagger:hilt-android:$hilt_version"
+    hiltKapt_dep = "com.google.dagger:hilt-compiler:$hilt_version"
+
+    material_dep = 'com.google.android.material:material:1.5.0'
+    constraintLayout_dep = 'androidx.constraintlayout:constraintlayout:2.1.3'
+    appCompat_dep = 'androidx.appcompat:appcompat:1.4.1'
+}

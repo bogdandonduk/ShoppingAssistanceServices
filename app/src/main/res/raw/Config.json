@@ -1,0 +1,56 @@
+[
+  {
+    "url": "https://reebok.com/.*/cart",
+    "controls": {
+      "promo": {},
+      "total": {}
+    },
+    "apply": [
+      {
+        "id": "apply-promo-button",
+        "androidClass": "android.widget.Button",
+        "text": ["Apply", "Применить"],
+        "contentDescription": ["Apply promo now"],
+        "timeout": 3000,
+        "precedingMarkerElements": [
+          {
+            "id": "verify-by-id-me-button",
+            "androidClass": "android.widget.Button",
+            "text": ["Verification by ID.ME", "Верификация по ID.ME"],
+            "contentDescription": ["Verify by ID.ME"],
+            "timeout": null,
+            "precedingMarkerElements": null,
+            "succeedingMarkerElements": null
+          }
+        ],
+        "succeedingMarkerElements": [
+          {
+            "id": "order-summary-text",
+            "androidClass": "android.widget.TextView",
+            "text": ["Order Summary", "Итоги заказа"],
+            "contentDescription": ["order-summary-label"],
+            "timeout": null,
+            "precedingMarkerElements": null,
+            "succeedingMarkerElements": null
+          }
+        ]
+      }
+    ],
+    "remove": [
+
+    ],
+    "unlock": [
+
+    ],
+    "pageLoadedMarkerElements": [
+
+    ],
+    "promoCodeAppliedMarkerElements": [
+
+    ],
+    "promoCodeNotFoundMarkerElements": [
+
+    ],
+    "resize": false
+  }
+]

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_modal_bottom_sheet"
+    android:paddingStart="18dp"
+    android:paddingTop="18dp"
+    android:paddingEnd="18dp"
+    android:paddingBottom="4dp">
+
+    <ImageView
+        android:id="@+id/layout_popup_coupon_applied_logo_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/layout_popup_coupon_applied_store_name_text_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_logo_petal_search" />
+
+    <TextView
+        android:id="@+id/layout_popup_coupon_applied_store_name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="REEBOK"
+        android:textColor="#000000"
+        android:textSize="24sp"
+
+
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/layout_popup_coupon_applied_cash_icon_image_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <Button
+        android:id="@+id/layout_popup_coupon_applied_continue_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounded_btn"
+        android:text="@string/continue_to_checkout"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_popup_coupon_applied_coupon_used_value_text_view"
+        app:layout_constraintVertical_bias="0.62"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <ImageView
+        android:id="@+id/layout_popup_coupon_applied_cash_icon_image_view"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/layout_popup_coupon_applied_you_saved_hint_text_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/icon_piggy_bank" />
+
+    <TextView
+        android:id="@+id/layout_popup_coupon_applied_you_saved_hint_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="You saved"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/layout_popup_coupon_applied_original_price_hint_text_view"
+        app:layout_constraintEnd_toStartOf="@+id/layout_popup_coupon_applied_amount_saved_hint_text_view"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/layout_popup_coupon_applied_amount_saved_hint_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/holo_green_dark"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/layout_popup_coupon_applied_you_saved_hint_text_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/layout_popup_coupon_applied_you_saved_hint_text_view"
+        app:layout_constraintTop_toTopOf="@+id/layout_popup_coupon_applied_you_saved_hint_text_view"
+        tools:text="$82.50!" />
+
+    <TextView
+        android:id="@+id/layout_popup_coupon_applied_original_price_hint_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/original_price"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/layout_popup_coupon_applied_with_app_help_hint_text_view"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/layout_popup_coupon_applied_original_price_value_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/layout_popup_coupon_applied_original_price_hint_text_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/layout_popup_coupon_applied_original_price_hint_text_view"
+        tools:text="$181.50" />
+
+    <TextView
+        android:id="@+id/layout_popup_coupon_applied_with_app_help_hint_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/with_petal_coupons"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/layout_popup_coupon_applied_coupon_used_hint_text_view"
+        app:layout_constraintStart_toStartOf="@+id/layout_popup_coupon_applied_original_price_hint_text_view" />
+
+    <TextView
+        android:id="@+id/layout_popup_coupon_applied_with_app_help_value_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#0A59F7"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/layout_popup_coupon_applied_with_app_help_hint_text_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/layout_popup_coupon_applied_with_app_help_hint_text_view"
+        tools:text="$99.00" />
+
+    <TextView
+        android:id="@+id/layout_popup_coupon_applied_coupon_used_hint_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/coupon_used"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/layout_popup_coupon_applied_continue_button"
+        app:layout_constraintStart_toStartOf="@+id/layout_popup_coupon_applied_with_app_help_hint_text_view" />
+
+    <ImageView
+        android:id="@+id/layout_popup_coupon_applied_coupon_icon_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="4dp"
+        android:src="@drawable/icon_coupon"
+        app:layout_constraintBottom_toBottomOf="@+id/layout_popup_coupon_applied_coupon_used_value_text_view"
+        app:layout_constraintEnd_toStartOf="@+id/layout_popup_coupon_applied_coupon_used_value_text_view"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintTop_toTopOf="@+id/layout_popup_coupon_applied_coupon_used_value_text_view" />
+
+    <TextView
+        android:id="@+id/layout_popup_coupon_applied_coupon_used_value_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LM50"
+        android:textColor="#0A59F7"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/layout_popup_coupon_applied_coupon_used_hint_text_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/layout_popup_coupon_applied_coupon_used_hint_text_view" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

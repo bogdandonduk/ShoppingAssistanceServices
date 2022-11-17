@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Shopping Assistance Services</string>
+    <string name="description_core_service">Service that assists you in shopping timely bringing deals</string>
+    <string name="name_core_service">Shopping Assistance Services Core</string>
+    <string name="coupons_found">Coupons Found!</string>
+    <string name="apply_coupons">Apply Coupons</string>
+    <string name="terms_and_exclusions_apply">Terms and exclusions apply</string>
+    <string name="continue_to_checkout">Continue to Checkout</string>
+    <string name="start">Start</string>
+    <string name="original_price">Original price</string>
+    <string name="with_petal_coupons">With Petal Coupons</string>
+    <string name="coupon_used">Coupon used</string>
+    <string name="coupon_application_hint">Wait until automatic coupon testing, selection and application finishes and we notify you. Interaction with your device can disrupt the process</string>
+    <string name="coupon_not_applied_hint">Unfortunately, no currently active coupons have been found and applied</string>
+</resources>
